@@ -1,0 +1,19 @@
+{
+  "name": "@wektor/core",
+  "version": "1.0.0",
+  "description": "",
+  "module": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist && npx babel src --out-dir dist --copy-files --source-maps inline",
+    "watch": "npm run build -- --watch",
+    "dev": "npm run watch",
+    "prepare": "npm run build"
+  },
+  "author": "Arno Schlipf",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.6.3",
+    "@babel/core": "^7.6.3",
+    "@babel/plugin-proposal-optional-chaining": "^7.6.0"
+  }
+}
